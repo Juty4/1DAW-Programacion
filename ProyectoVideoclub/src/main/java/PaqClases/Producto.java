@@ -16,7 +16,6 @@ public abstract class Producto implements Alquilable,Retirable
 
     public Producto(String nombre)
     {
-
         this.nombre = nombre;
 
     }
@@ -26,44 +25,54 @@ public abstract class Producto implements Alquilable,Retirable
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(int id)
+    {
         this.id = id;
     }
 
-    public String getNombre() {
+    public String getNombre()
+    {
         return nombre;
     }
 
-    public void setNombre(String nombre) {
+    public void setNombre(String nombre)
+    {
         this.nombre = nombre;
     }
 
-    public double getPrecio() {
+    public double getPrecio()
+    {
         return precio;
     }
 
-    public void setPrecio(double precio) {
+    public void setPrecio(double precio)
+    {
         this.precio = precio;
     }
 
-    public static int getContProductos() {
+    public static int getContProductos()
+    {
         return contProductos;
     }
 
-    public static void setContProductos(int contProductos) {
+    public static void setContProductos(int contProductos)
+    {
         Producto.contProductos = contProductos;
     }
 
-    public void setAlquilado(boolean alquilado) {
+    public void setAlquilado(boolean alquilado)
+    {
         this.alquilado = alquilado;
     }
 
     @Override
-    public boolean isRetirado() {
+    public boolean isRetirado()
+    {
         return retirado;
     }
 
-    public void setRetirado(boolean retirado) {
+    public void setRetirado(boolean retirado)
+    {
         this.retirado = retirado;
     }
 
